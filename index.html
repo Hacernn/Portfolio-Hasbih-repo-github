@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Hasbih Cesaro Ramadhan</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Portfoli<span>o.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact" class="btn-contact">Kontak</a></li>
+        </ul>
+        <!-- Hamburger Menu Toggle -->
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h3>Halo, nama saya</h3>
+            <h1>Hasbih Cesaro Ramadhan</h1>
+            <p>Saya adalah seorang <span class="typing-text"></span></p>
+            <div class="socials">
+                <a href="https://github.com/Hacernn"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hasbih-cesaro-ramadhan-6a07103b1/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/hasbihcesaro/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="#projects" class="btn">Lihat Project Saya</a>
+        </div>
+        <div class="hero-img">
+            <img src="wajah.jpeg" alt="Foto Profil"> 
+        </div>
+
+        
+    </header>
+
+<section id="about" class="about">
+    <div class="about-container">
+    <div class="about-content">
+        <h2>Tentang <span>Saya</span></h2>
+        <p>Saya adalah seorang pengembang web dan game muda yang saat ini menempuh pendidikan di SMKN 12 Surabaya. Di usia 17 tahun, saya telah mendedikasikan waktu saya untuk mempelajari teknologi terbaru guna menciptakan solusi digital yang inovatif. </p>
+        <a href="#" class="btn cv-btn">Lihat Profil CV</a>
+    </div>
+</div>
+
+<div id="cvModal" class="modal">
+    <span class="close-btn">&times;</span>
+    <div class="modal-content">
+        <img src="CV.png" alt="CV Saya">
+    </div>
+</div>
+    </section>
+
+    <section id="skills" class="section bg-dark">
+        <h2 class="section-title">Keahlian <span>Teknis</span></h2>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fab fa-unity"></i><h3>Unity</h3></div>
+            <div class="skill-card"><i class="fas fa-code"></i><h3>C#</h3></div> <div class="skill-card"><i class="fas fa-cube"></i><h3>Blender</h3></div> <div class="skill-card"><i class="fab fa-figma"></i><h3>Figma</h3></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Proyek <span>Terbaru</span></h2>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-target="all">Semua</button>
+            <button class="filter-btn" data-target="web">Web</button>
+            <button class="filter-btn" data-target="game">Game</button>
+            <button class="filter-btn" data-target="asset">Asset / Blender</button>
+        </div>
+
+       <div class="projects-grid">
+    <!-- Project 1: Web -->
+    <div class="project-card" data-category="web">
+        <div class="project-img">
+            <img src="Tampilan Web.png" alt="Web">
+        </div>
+        <div class="project-info">
+            <h3>Website Belajar Tajwid</h3>
+            <p>Website Sederhana Untuk Belajar Tajwid Al-Quran.</p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['Tampilan Web.png', 'Tampilan Web1.png', 'Tampilan Web2.png'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 2: Game -->
+    <div class="project-card" data-category="game">
+        <div class="project-img">
+            <img src="ElementFusion1.jpeg" alt="Game">
+        </div>
+        <div class="project-info">
+            <h3>Element Fusion</h3>
+            <p>Game Match3 2D Seperti Candy Crush.</p>
+            <div class="project-tags">
+                <span>Unity</span>
+                <span>C#</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['ElementFusion1.jpeg', 'ElementFusion2.jpg', 'Element Fusion3.jpg', 'Element Fusion4.jpg'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 3: Game -->
+    <div class="project-card" data-category="game">
+        <div class="project-img">
+            <img src="game1.png" alt="Game">
+        </div>
+        <div class="project-info">
+            <h3>Journey Of The Hero</h3>
+            <p>Game 2D Platformer Seperti Super Mario Bros.</p>
+            <div class="project-tags">
+                <span>Unity</span>
+                <span>C#</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['game1.png', 'game2.png', 'game3.png', 'game4.png', 'game5.png'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 4: Game -->
+    <div class="project-card" data-category="game">
+        <div class="project-img">
+            <img src="Legenda Aji1.png" alt="Game">
+        </div>
+        <div class="project-info">
+            <h3>Legenda Aji</h3>
+            <p>Game 3D Action Tentang Legenda Aji Saka dari Jawa Tengah Di indonesia, Masih Dalam Prosses Pembuatan</p>
+            <div class="project-tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Blender</span>
+                <span>Progress</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['Legenda Aji1.png', 'Legenda Aji3.png', 'Legenda Aji2.png', 'Legenda Aji4.png'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 5: Game -->
+    <div class="project-card" data-category="game">
+        <div class="project-img">
+            <img src="Before The Third1.jpg" alt="Game">
+        </div>
+        <div class="project-info">
+            <h3>Before The third</h3>
+            <p>Game 3D Horror ,Di mana Kamu Memancing Orang orang Terdekatmu Melalui Telepon Dan Mengorbankan Mereka Satu Persatu, Dan Setiap Pilihan Membawamu Lebih Dekat Ke titik Tak bisa Kembali</p>
+            <div class="project-tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Blender</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['Before The Third1.jpg', 'Before The Third2.jpg', 'Before The Third3.jpg'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 6: Asset (Blender) -->
+    <div class="project-card" data-category="asset">
+        <div class="project-img">
+            <img src="test2.png" alt="Asset">
+        </div>
+        <div class="project-info">
+            <h3>3D Asset Character Cowok</h3>
+            <p>Karakter 3D Yg dibuat Dengan Blender</p>
+            <div class="project-tags">
+                <span>Blender</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['test2.png', 'test1.png', 'test3.png'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 7: Asset (Blender) - BARU -->
+    <div class="project-card" data-category="asset">
+        <div class="project-img">
+            <img src="Nenek Narti.png" alt="Blender Environment">
+        </div>
+        <div class="project-info">
+            <h3>Nenek Narti</h3>
+            <p>Asset Karakter NPC di Game 3D Horror Before The Third</p>
+            <div class="project-tags">
+                <span>Blender</span>
+                <span>Low Poly</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['Nenek Narti.png', 'Nenek Narti2.png', 'Nenek Narti3.png'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 8: Asset (Blender) - BARU -->
+    <div class="project-card" data-category="asset">
+        <div class="project-img">
+            <img src="ghost1.png" alt="Blender Weapon">
+        </div>
+        <div class="project-info">
+            <h3>Ghost</h3>
+            <p>Karakter Villain Utama Atau Musuh Yg perlu Dihadapi Di game Before The Third</p>
+            <div class="project-tags">
+                <span>Blender</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['ghost1.png', 'ghost2.png', 'ghost3.png'])">Detail</a>
+        </div>
+    </div>
+
+    <!-- Project 9: Asset (Blender) - BARU -->
+    <div class="project-card" data-category="asset">
+        <div class="project-img">
+            <img src="gedung1.png" alt="Blender Art">
+        </div>
+        <div class="project-info">
+            <h3>Bangunan</h3>
+            <p>Asset Bangunan Tinggi Dengan 4 Warna Bangunan yg berbeda</p>
+            <div class="project-tags">
+                <span>Blender</span>
+            </div>
+            <a href="javascript:void(0)" class="btn-detail" onclick="openProject(['gedung1.png', 'gedung2.png', 'gedung3.png'])">Detail</a>
+        </div>
+    </div>
+
+</div>
+        
+
+        
+        
+    </section>
+
+    <section class="section" id="contact">
+    <h2 class="section-title">Hubungi <span>Saya</span></h2>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <i class='bx bxs-map'></i>
+                <div>
+                    <h3>Alamat</h3>
+                    <p>Jl. Mbalas Klumprik No. 104, Surabaya, Jawa Timur</p>
+                    <a href="https://www.google.com/maps?q=Jl.+Mbalas+Klumprik+No.+104,+Surabaya,+Jawa+Timur" target="_blank">Lihat di Google Maps</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class='bx bxs-phone'></i>
+                <div>
+                    <h3>Telepon</h3>
+                    <p>+62 895-2535-5173</p>
+                    <a href="tel:+6289525355173">Hubungi Saya</a>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class='bx bxs-envelope'></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>hasbihcesa@email.com</p>
+                </div>
+            </div>
+        </div>
+
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Alamat Email" required>
+            <textarea cols="30" rows="10" placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; Portfolio 2026 Dibuat dengan <i class="fas fa-heart"></i> oleh Hasbih Cesaro Ramadhan</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="projectModal" class="modal">
+    <div class="modal-container">
+        <span class="close-project" onclick="closeProject()">&times;</span>
+        
+        <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+        
+        <div class="modal-content">
+            <img src="" alt="Detail Proyek" id="imgFull">
+        </div>
+        
+        <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
